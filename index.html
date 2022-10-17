@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>Kalkulator walut</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <form class="form js-formS">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walut (submit)</legend>
+                <p>
+                    <label class="form__label">
+                        Kwota wymieniana: <input class="form__field js-amountIn" type="number" name="amount1" placeholder="Tyle mam"
+                            step="any" required autofocus>
+                    </label>
+                    <label class="form__label">
+                        Waluta wymieniana
+                        <select class="form__select js-currencyIn" name="currencyIn">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label class="form__label">
+                        Kwota otrzymana: <input class=" form__field js-amountOut" type="number" name="amount2"
+                            placeholder="Tyle dostanę" step="any" readonly>
+                    </label>
+                    <label class="form__label">
+                        Waluta docelowa
+                        <select class="form__select js-currencyOut" name="currencyOut">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR" selected>EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </label>
+                </p>
+                <button class="form__button">Wymień</button>
+            </fieldset>
+        </form>
+        </div>
+
+        <div class="container">
+        <form class="form js-formI">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walut (input)</legend>
+                <p>
+                    <label class="form__label">
+                        Kwota wymieniana: <input class="form__field js-amountInInput" type="number" name="amount1"
+                            placeholder="Tyle mam" step="any" required>
+                    </label>
+                    <label class="form__label">
+                        Waluta wymieniana
+                        <select class="form__select js-currencyInInput" name="currencyIn">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label class="form__label">
+                        Kwota otrzymana: <input class="form__field js-amountOutInput" type="number" name="amount2"
+                            placeholder="Tyle dostanę" step="any" readonly>
+                    </label>
+                    <label class="form__label">
+                        Waluta docelowa
+                        <select class="form__select js-currencyOutInput" name="currencyOut">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR" selected>EUR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </label>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
